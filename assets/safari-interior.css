@@ -56,6 +56,10 @@ body.safari-interior{margin:0;background:var(--safari-night);color:var(--safari-
 .safari-interior.course-safari .tiers h2{font:500 clamp(29px,3.5vw,47px)/1.15 Georgia,serif}
 .safari-interior.course-safari .tiers .tier .button{box-shadow:none}
 .safari-interior.course-safari .cta{background:#193145;color:#f8efdd;padding:55px clamp(20px,6vw,80px)}
+/* Dark course bands stay navy/green; the sitewide teal eyebrow is for cream surfaces. Restore safari gold there. The light "next step" band sets its own background inline. */
+.safari-interior.course-safari :is(.listen,.cta) .eyebrow,
+.safari-interior.course-safari .section2:not([style]) .eyebrow,
+.safari-interior.course-safari .tiers > .wrap > .eyebrow{color:var(--safari-gold)}
 .safari-interior.course-safari .cta h2{font:500 clamp(27px,3.2vw,45px)/1.15 Georgia,serif}
 .safari-interior.course-safari .credibility{color:#102334}
 /* The guide has a matched Safari entry, while its worksheet remains printable. */
