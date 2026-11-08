@@ -16,6 +16,13 @@ body.ff-interior :is(.product-card,.card,.listen-card,.sheet) :is(h2,h3){color:v
 body.ff-interior :is(.button,.join,.guide-actions a,.toolbar button){background:var(--ff-teal);color:#fff;border-radius:8px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;font-weight:750}
 body.ff-interior :is(.section2,.mentor-wrap){background:var(--ff-paper);color:var(--ff-ink)}
 body.ff-interior :is(.eyebrow){color:var(--ff-teal);letter-spacing:.08em}
+/* Teal passes on cream and white. These surfaces stay dark, so keep their original light label colors. */
+@media screen{
+body.ff-interior .hero-es .eyebrow,
+body.ff-interior main.reg .eyebrow{color:#b8f0ff}
+body.ff-interior main.reg .reg-card .eyebrow{color:var(--ff-teal)}
+body.ff-interior.ff-lab .eyebrow{color:#a8eaff}
+}
 body.ff-interior :is(.toolbar){background:var(--ff-panel);border:1px solid var(--ff-line)}
 body.ff-interior :is(.choice,.listen-card button){min-height:44px}
 body.ff-interior .guide-hero{padding-block:54px}
