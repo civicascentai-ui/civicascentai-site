@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#06111f">
-<title>CivicAscent AI — AI Lab</title>
+<title>CivicAscent AI - AI Lab</title>
 <style>
 :root{--bg:#06111f;--panel:#0b2037;--text:#f8fbff;--muted:#cfdeeb;--blue:#46baff;--gold:#f4cb62;--green:#57d69e;--purple:#9d7cff}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#06111f;color:var(--text);font-family:Arial,Helvetica,sans-serif}
@@ -50,9 +50,17 @@ linear-gradient(150deg,#0c2845,#061523 68%);box-shadow:0 34px 100px #0007}
 @media(max-width:620px){.lab{width:100%;border-radius:0;min-height:auto}.lab-grid{grid-template-columns:1fr;padding:72px 14px 24px}.portal{min-height:310px}.top{height:62px}.brand span{display:none}.experience{width:calc(100% - 22px);padding-top:25px}.scene{min-height:430px}.scene-translate{grid-template-columns:1fr;padding-top:70px}.mid-swap{width:54px;height:54px}.copy p{max-width:none}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
+<link rel="stylesheet" href="assets/info-pages.css">
 </head>
 <body>
-<header class="top">
+<header class="top"><nav class="cai-main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mission.html">Mission</a>
+    <a href="programs.html">Programs</a>
+    <a href="contact.html">Contact</a>
+    <a href="es.html" lang="es">Español</a><a href="register.html">Free Workshop</a>
+  </nav>
 <div class="brand"><img src="assets/civicascent-logo.svg" alt=""><span>CivicAscent AI</span></div>
 <div class="top-actions"><button class="btn" id="langBtn" type="button">ES</button><a class="back" id="homeBtn" href="ai-lab.html">AI Lab</a></div>
 </header>
@@ -122,7 +130,7 @@ speechSynthesis.speak(u);
 function render(){
 if(!key||!DATA[key]){landing.style.display="block";exp.style.display="none";E("homeBtn").style.display="none";return}
 landing.style.display="none";exp.style.display="grid";E("homeBtn").style.display="inline-flex";
-const d=DATA[key][lang];document.title="CivicAscent AI — "+d.title;E("title").textContent=d.title;E("sub").textContent=d.sub;E("message").textContent=d.msg;E("sceneBody").innerHTML=sceneHTML(key);
+const d=DATA[key][lang];document.title="CivicAscent AI - "+d.title;E("title").textContent=d.title;E("sub").textContent=d.sub;E("message").textContent=d.msg;E("sceneBody").innerHTML=sceneHTML(key);
 E("langBtn").textContent=lang==="en"?"ES":"EN";E("playBtn").textContent=lang==="en"?"🔊 Replay Voice":"🔊 Repetir voz";E("stopBtn").textContent=lang==="en"?"■ Stop":"■ Detener";
 setTimeout(speak,350);
 }

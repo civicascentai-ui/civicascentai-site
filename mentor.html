@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="CivicAscent Guided Planner — practical guidance for learning AI, career growth, business, and community impact.">
+<meta name="description" content="CivicAscent Guided Planner - practical guidance for learning AI, career growth, business, and community impact.">
 <meta name="theme-color" content="#061a3a">
 <title>CivicAscent Guided Planner</title><link rel="icon" href="assets/civicascent-logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
@@ -47,7 +47,14 @@ textarea{min-height:100px}
 <body class="ff-interior ">
 <header class="site-header">
 <a class="brand" href="index.html"><span class="logo"><img src="assets/civicascent-logo.svg" alt="" aria-hidden="true"></span><span><b>CivicAscent <i>AI</i></b><small>People. Skills. Stronger Communities.</small></span></a>
-<nav><a href="index.html">Home</a><a href="programs.html">Programs</a><a href="course.html">Courses</a><a class="active" href="mentor.html">Guided Planner</a><a href="capabilities.html">Organizations</a><a href="es.html" lang="es">Español</a><a href="register.html">Free Workshop</a></nav>
+<nav class="active" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mission.html">Mission</a>
+    <a href="programs.html">Programs</a>
+    <a href="contact.html">Contact</a>
+    <a href="es.html" lang="es">Español</a><a href="register.html">Free Workshop</a>
+  </nav>
 </header>
 
 <main>
@@ -55,7 +62,7 @@ textarea{min-height:100px}
 <div class="inner">
 <p class="eyebrow">GUIDANCE • ACCOUNTABILITY • NEXT ACTION</p>
 <h1>Meet your CivicAscent Guided Planner.</h1>
-<p>A structured planning tool for people who want a clear next step—not more jargon. Choose your goal, describe where you are, and get a focused action plan you can use immediately.</p><p style="max-width:760px;margin:14px auto 0;padding:14px 16px;border-radius:12px;background:#eef7fb;color:#28415f"><b>How it works:</b> this planner uses structured decision rules to generate next-step plans. It is not a live AI chat assistant.</p>
+<p>A structured planning tool for people who want a clear next step-not more jargon. Choose your goal, describe where you are, and get a focused action plan you can use immediately.</p><p style="max-width:760px;margin:14px auto 0;padding:14px 16px;border-radius:12px;background:#eef7fb;color:#28415f"><b>How it works:</b> this planner uses structured decision rules to generate next-step plans. It is not a live AI chat assistant.</p>
 </div>
 </section>
 
@@ -98,7 +105,7 @@ textarea{min-height:100px}
 <div id="actions"></div>
 <p><b>Checkpoint:</b> <span id="checkpoint"></span></p>
 <div class="actions">
-<a class="button" id="emailMentor" href="mailto:info@civicascentai.com">Ask CivicAscent AI for help</a>
+<a class="button" id="emailMentor" href="mailto:civicascentai@gmail.com">Ask CivicAscent AI for help</a>
 <button type="button" class="choice" type="button" id="resetBtn">Start another plan</button>
 </div>
 </div>
@@ -158,7 +165,7 @@ textarea{min-height:100px}
 </section>
 </main>
 
-<footer><b>CivicAscent AI</b><span>People. Skills. Stronger Communities.</span><span>© 2026 CivicAscent AI · James K. Peters</span></footer>
+<footer><b>CivicAscent AI</b><span>People. Skills. Stronger Communities.</span><span>© 2026 CivicAscent AI</span></footer>
 
 <script>
 let goal='learn';
@@ -180,7 +187,7 @@ stuck:['Solve the bottleneck before adding more tools.',['Name the exact task bl
 growing:['Turn AI skills into visible career value.',['Document successful AI-assisted work.','Create a small portfolio or examples of outcomes.','Practice explaining your process and safeguards.'],'You have evidence of results you can discuss with an employer or client.']
 },
 business:{
-starting:['Validate a customer problem before spending heavily.',['Write one sentence describing who you help and what problem you solve.','Talk to or survey five potential customers.','Create one simple paid offer based on what you learn.'],'At least one real prospect clearly wants the result you offer.'],
+starting:['Validate a customer problem before spending heavily.',['Write one sentence describing who you help and what problem you solve.','Talk to or survey five potential customers.','Create one simple offer based on what you learn.'],'At least one real prospect clearly wants the result you offer.'],
 moving:['Focus the business on sales and delivery.',['Choose one primary offer.','Create one clear way to buy or request it.','Contact qualified prospects every week and track replies.'],'You can see leads, conversations, proposals, and sales in one simple tracker.'],
 stuck:['Find the single constraint slowing revenue.',['Decide whether the problem is offer, traffic, trust, sales, or delivery.','Choose one measurable fix for that constraint.','Work only that fix until the metric changes.'],'The key metric improves or you have enough evidence to change direction.'],
 growing:['Build systems before adding complexity.',['Document how leads become customers.','Standardize delivery for your main offer.','Track cash, pipeline, fulfillment, and follow-up every week.'],'The business can repeat its sales and delivery process without improvising every step.']
@@ -204,7 +211,7 @@ document.getElementById('checkpoint').textContent=p[2];
 document.getElementById('mentorOutput').style.display='block';
 const subject=encodeURIComponent('CivicAscent Guided Planner Help');
 const body=encodeURIComponent('My goal: '+goal+'\nMy stage: '+stage+'\nMy situation: '+(situation||'Not provided')+'\n\nPlease help me with the next step.');
-document.getElementById('emailMentor').href='mailto:info@civicascentai.com?subject='+subject+'&body='+body;
+document.getElementById('emailMentor').href='mailto:civicascentai@gmail.com?subject='+subject+'&body='+body;
 document.getElementById('mentorOutput').scrollIntoView({behavior:'smooth',block:'start'});
 });
 
@@ -245,12 +252,12 @@ const stages=[
 ['Intermediate',intermediate,roadmapTasks(skill,'intermediate')],
 ['Advanced',advanced,roadmapTasks(skill,'advanced')]
 ];
-document.getElementById('roadmapTitle').textContent=skill+' — '+weeks+'-Week Roadmap';
+document.getElementById('roadmapTitle').textContent=skill+' - '+weeks+'-Week Roadmap';
 document.getElementById('roadmapSummary').textContent='Plan for about '+hours+' hours per week ('+totalHours+' total hours). '+(desired ? 'Target outcome: '+desired : 'Your goal is steady progression from fundamentals to independent use.');
 document.getElementById('roadmapStages').innerHTML=stages.map((s,i)=>{
 const start=i===0?1:(i===1?beginner+1:beginner+intermediate+1);
 const end=i===0?beginner:(i===1?beginner+intermediate:weeks);
-return '<article class="road-stage"><span class="level">'+esc(s[0])+'</span><h3>Weeks '+start+'–'+end+'</h3><ul>'+s[2].map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><p><b>Weekly target:</b> '+hours+' focused hours with at least one hands-on practice session.</p></article>';
+return '<article class="road-stage"><span class="level">'+esc(s[0])+'</span><h3>Weeks '+start+'-'+end+'</h3><ul>'+s[2].map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><p><b>Weekly target:</b> '+hours+' focused hours with at least one hands-on practice session.</p></article>';
 }).join('');
 document.getElementById('roadmapCheckpoint').textContent='By week '+weeks+', complete one independent project using '+skill+' and explain your process, decisions, mistakes, and improvements without relying on a step-by-step guide.';
 document.getElementById('roadmapOutput').style.display='block';

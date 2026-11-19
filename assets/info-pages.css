@@ -1,0 +1,16 @@
+/* Information-page typography for About, Mission, Programs, Contact, and Privacy.
+   Uses the same color tokens as the live homepage stylesheet. */
+.prose{max-width:46rem;margin:0 auto;padding:1.5rem clamp(24px,5vw,74px) 3rem}
+.prose h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;margin:0 0 1rem}
+.prose h2{font-size:1.35rem;margin:2rem 0 .7rem}
+.prose p,.prose li{font-size:1.05rem;color:var(--ink,#10233c);line-height:1.6}
+.prose .lead{font-size:1.2rem;font-weight:500}
+.prose .eyebrow{text-transform:uppercase;letter-spacing:.04em;font-size:.8rem;font-weight:700;color:var(--teal,#095571);margin:0 0 .4rem}
+.prose ul{padding-left:1.2rem}
+.prose .org-box{background:var(--panel,#f2f5f8);border:2px solid var(--line,#5b7080);border-radius:12px;padding:1rem 1.2rem;margin:1.5rem 0}
+.site-footer{padding:1.2rem clamp(24px,5vw,74px) 2rem;border-top:2px solid var(--line,#5b7080);background:#fff;color:var(--muted,#283c52);font-size:.95rem;line-height:1.55}
+.site-footer p{margin:.35rem 0}
+.top-links a[aria-current="page"]{font-weight:800;text-decoration:underline}
+.mission-block{background:#fff;border:2px solid var(--line,#5b7080);border-radius:16px;padding:1.2rem 1.3rem;margin:1.5rem 0}
+.cai-main-nav{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;font:600 .9rem/1.3 system-ui,sans-serif}
+.cai-main-nav a{color:inherit;text-underline-offset:3px}

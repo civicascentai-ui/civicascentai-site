@@ -23,7 +23,7 @@
       '',
       type === 'interest' ? 'What I want to learn: ' + (message || 'Please contact me with information.') : 'My question: ' + message,
       '',
-      'I am asking CivicAscent AI to respond to this inquiry. This is not paid enrollment, a confirmed workshop seat, or a marketing-list subscription.',
+      'I am asking CivicAscent AI to respond to this inquiry. This is not a class registration, a confirmed workshop seat, or a marketing-list subscription.',
       'Please do not include private financial, medical, identity or military records.'
     ];
     const body = lines.join('\n').slice(0,MAX);
