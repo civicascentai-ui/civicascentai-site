@@ -13,3 +13,13 @@
 .r3-btn{display:inline-block;background:#1f5f8b;color:#fff;text-decoration:none;font-weight:600;border-radius:8px;padding:.8rem 1.2rem;font-size:1.05rem}
 .r3-btn.r3-outline{background:transparent;color:#1f5f8b;border:2px solid #1f5f8b}
 .r3-list li{margin:.35rem 0}
+
+.r3-nav a.r3-nav-donate{background:#2e7d4f;color:#fff;border-radius:6px;padding:.45rem .8rem;border:0;font-weight:600}
+.r3-nav a.r3-nav-donate:hover,.r3-nav a.r3-nav-donate:focus{border-bottom-color:transparent;filter:brightness(1.08)}
+.r3-btn.r3-btn-donate{background:#2e7d4f;color:#fff}
+.r3-form{margin:1.5rem 0;padding:1.25rem;border:1px solid #d9d6cf;border-radius:8px;background:#fff;max-width:36rem}
+.r3-form label{display:block;font-weight:600;margin:.8rem 0 .3rem}
+.r3-form input,.r3-form textarea,.r3-form select{width:100%;max-width:100%;box-sizing:border-box;padding:.6rem .7rem;font:inherit;border:1px solid #8a9098;border-radius:6px}
+.r3-form button{margin-top:1rem;background:#1f5f8b;color:#fff;border:0;border-radius:8px;padding:.8rem 1.2rem;font-weight:600;font-size:1.05rem;cursor:pointer}
+.r3-form .privacy-note,.r3-form .form-status{font-size:.95rem;margin-top:1rem;line-height:1.5}
+.r3-form .form-status{margin:0 0 1rem;color:#4a5562}
